@@ -1,0 +1,12 @@
+
+/.vs
+Assembly-CSharp-Editor.csproj
+*.csproj
+.vsconfig
+Impactoverse.zip
+/Impactoverse
+/Library
+/Logs
+/obj
+Impactoverse-game.sln
+/Temp
