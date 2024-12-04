@@ -6,7 +6,7 @@ public class DataGp : MonoBehaviour
 {
     public static DataGp Instance;
     public  User User;
-   
+    public bool isChild;
   
     private void Awake()
     {

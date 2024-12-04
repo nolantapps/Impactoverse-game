@@ -6,26 +6,33 @@ using UnityEngine.SceneManagement;
 public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject LoadingScreen;
+    [SerializeField] private GameObject LoadingScene;
+    public static MainMenuManager Instance;
+    private void Awake()
+    {
+        Instance = this;
+    }
     private void Start()
     {
         
     }
-    public  void CharacterSelectionButton()
+    public  void ChangeScene( string SceneName)
     {
         LoadingScreen.SetActive(true);
-        StartCoroutine(LoadYourAsyncScene());
+        StartCoroutine(LoadYourAsyncScene(SceneName));
         
     }
-    IEnumerator LoadYourAsyncScene()
+    
+    IEnumerator LoadYourAsyncScene(string SceneName)
     {
-        
+        yield return new WaitForSeconds(3f);    
 
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(1);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName);
 
         // Wait until the asynchronous scene fully loads
         while (!asyncLoad.isDone)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(SceneName);
             yield return null;
         }
     }

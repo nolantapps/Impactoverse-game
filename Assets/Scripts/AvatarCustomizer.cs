@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Winz;
+using TMPro;
 
 public class AvatarCustomizer : MonoBehaviour
 {
@@ -12,10 +13,11 @@ public class AvatarCustomizer : MonoBehaviour
     [SerializeField] private bool isAllReset;
     [SerializeField] private CharacterToUse characterToUse;
     [SerializeField] private Genders genders;
-
+    bool isMale;
     private CharacterValues currentCharacter;
     public int[] currentIndices = new int[6]; // Stores indices for shirts, pants, shoes, hairs, caps, glasses
     public GameObject LoadingScreen;
+    public TMP_Dropdown dropdown;
 
     // Store the last used hair index
     private int lastUsedHairIndex = 0;
@@ -126,11 +128,20 @@ public class AvatarCustomizer : MonoBehaviour
     {
         characterToUse = DataGp.Instance.User.characterToUse;
         genders = DataGp.Instance.User.genders;
+        if (genders == Genders.Male)
+        {
+            dropdown.value = 0;
+        }
+        else
+        {
+            dropdown.value = 1;
 
+        }
         currentCharacter = CharacterSetup.Find(cv => cv.gender == genders && cv.type == characterToUse);
         currentCharacter.Model.SetActive(true);
 
         currentIndices[0] = DataGp.Instance.User.values.currentShirt;
+        
         currentIndices[1] = DataGp.Instance.User.values.currentPant;
         currentIndices[2] = DataGp.Instance.User.values.currentShoe;
         currentIndices[3] = DataGp.Instance.User.values.currentHair;
@@ -142,6 +153,15 @@ public class AvatarCustomizer : MonoBehaviour
 
     private void InitializeAppearance()
     {
+        if (currentIndices[0] == 0)
+        {
+            currentIndices[0] = 1;
+        }
+        if (currentIndices[1] == 0)
+        {
+            currentIndices[1] = 1;
+
+        }
         SetActiveItems(currentCharacter.shirts, currentIndices[0]);
         SetActiveItems(currentCharacter.pants, currentIndices[1]);
         SetActiveItems(currentCharacter.shoes, currentIndices[2]);
@@ -179,6 +199,7 @@ public class AvatarCustomizer : MonoBehaviour
 
     public void SaveData()
     {
+
         DataGp.Instance.User.values.currentShirt = currentIndices[0];
         DataGp.Instance.User.values.currentPant = currentIndices[1];
         DataGp.Instance.User.values.currentShoe = currentIndices[2];
@@ -187,8 +208,22 @@ public class AvatarCustomizer : MonoBehaviour
         DataGp.Instance.User.values.currentGlass = currentIndices[5];
         DataGp.Instance.User.values.skinToneValue = skinToneColorSlider.value;
         DataGp.Instance.User.genders = genders;
-        APIManager.Instance.UpdateCharacter();
+        if (!DataGp.Instance.isChild)
+        {
+            APIManager.Instance.UpdateCharacter();
+
+        }
+
+        Debug.Log("Shirt: " + currentIndices[0]);
+        Debug.Log("Pant: " + currentIndices[1]);
+        Debug.Log("Shoe: " + currentIndices[2]);
+        Debug.Log("Hair: " + currentIndices[3]);
+        Debug.Log("Cap: " + currentIndices[4]);
+        Debug.Log("Glasses: " + currentIndices[5]);
+        Debug.Log("SkinToneValueis: " + skinToneColorSlider.value);
+        Debug.Log("genders: " +genders);
         LoadingScreen.SetActive(true);
+        Invoke(nameof(ChangeScene), 3);
     }
 
     public void ChangeScene()
@@ -205,6 +240,33 @@ public class AvatarCustomizer : MonoBehaviour
         playerColorMat.SetColor("_EmissionColor", skinColor);
         DynamicGI.SetEmissive(currentCharacter.baseMeshRenderer, skinColor);
     }
+    public void GenderChange()
+    {
+        foreach (var item in CharacterSetup)
+        {
+            item.Model.SetActive(false);
+        }
+        DataGp.Instance.User.values.currentShirt = currentIndices[0];
+        DataGp.Instance.User.values.currentPant = currentIndices[1];
+        DataGp.Instance.User.values.currentShoe = currentIndices[2];
+        DataGp.Instance.User.values.currentHair = currentIndices[3];
+        DataGp.Instance.User.values.currentCap = currentIndices[4];
+        DataGp.Instance.User.values.currentGlass = currentIndices[5];
+        DataGp.Instance.User.values.skinToneValue = skinToneColorSlider.value;
+        if (genders == Genders.Male)
+        {
+            
+            DataGp.Instance.User.genders = Genders.Female;
+        }
+        else
+        {
+            DataGp.Instance.User.genders = Genders.Male;
+        }
+        InitializeCharacter();
+        InitializeAppearance();
+        UpdateAppearance();
+
+    }
 }
 
 [System.Serializable]
@@ -217,5 +279,5 @@ public struct CharacterValues
     public Renderer baseMeshRenderer;
 }
 
-public enum Genders { Male, Female, NotSelected }
+public enum Genders { Male, Female }
 public enum CharacterToUse { Child, Adult }

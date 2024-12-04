@@ -25,8 +25,8 @@ namespace Winz
         public void UpdateCharacter()
         {
             JSONObject form = new JSONObject();
-            form.AddField("email","shaheernazim9@gmail.com");
-            form.AddField("password", "manham12");
+            form.AddField("email",DataGp.Instance.User.email);
+            form.AddField("password", DataGp.Instance.User.password);
             form.AddField("shirt", DataGp.Instance.User.values.currentShirt);
             form.AddField("pant", DataGp.Instance.User.values.currentPant);
             form.AddField("shoes", DataGp.Instance.User.values.currentShoe);

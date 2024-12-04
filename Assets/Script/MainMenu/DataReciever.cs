@@ -13,55 +13,31 @@ public class DataReceiver : MonoBehaviour
     
     public void Start()
     {
-        try
-        {
-            GameAnalyticsSDK.GameAnalytics.Initialize();
-        }
-        catch
-        {
-            //Error.text = "Some Issue With the GameAnalytics";
-        }
+       
         
-        //InvokeRepeating(nameof(SendEvent), 4f, 1f);
     }
-    void SendEvent()
-    {
-        try
-        {
-            if (GameAnalytics.Initialized)
-            {
-                GameAnalyticsSDK.GameAnalytics.NewProgressionEvent(GameAnalyticsSDK.GAProgressionStatus.Start, "Bravo Entered The Space");
-                GameAnalyticsSDK.GameAnalytics.NewProgressionEvent(GameAnalyticsSDK.GAProgressionStatus.Start, "Shaheer Entered The Space");
-                Error.text = "Analytics Send";
-
-            }
-            else
-            {
-                try
-                {
-                    GameAnalytics.Initialize();
-
-                }
-                catch
-                {
-                    Error.text = "Some Issue With the GameAnalytics in the Invoke";
-                }
-                Error.text = "Analytics Not Initilized Send";
-
-            }
-        }
-        catch
-        {
-            Error.text = "Serious Issue With the Analytics";
-        }
-    }
+  
     // This method will be called from JavaScript
 
 
-    public void ReceiveData(string jsonData)
+    public void ReceiveData(string jsonData )
     {
-        Debug.Log($"Received JSON: {jsonData}");
-        GameAnalyticsSDK.GameAnalytics.Initialize();
+        string[] strings = jsonData.Split('|');
+        string user ="";
+        string isChild ="";
+        if (strings.Length == 2)
+        {
+            user = strings[0];
+            isChild = strings[1];
+
+            Debug.Log($"user: {user}");
+            Debug.Log($"isChild: {isChild}");
+        }
+        else
+        {
+            Debug.LogError("Unexpected data format received.");
+        }
+        Debug.Log($"Received JSON: {user}");
         try
         {
             // Step 1: If jsonData is stringified, attempt to deserialize it
@@ -69,52 +45,78 @@ public class DataReceiver : MonoBehaviour
             // First, let's parse the string to get the raw JSON content.
 
             // Deserialize the stringified JSON
-            var deserializedJson = JsonConvert.DeserializeObject(jsonData);
-
-            // Now, get the actual stringified JSON from the object and parse it again.
-            string rawJson = deserializedJson.ToString();
-
-            // Step 2: Deserialize the actual JSON object into the User class
-            User userData = JsonConvert.DeserializeObject<User>(rawJson);
-            DataGp.Instance.User.Name = userData.publicProfile.displayName;
-            if (DataGp.Instance.User.Name == "child")
+            if (isChild == "true")
             {
-                DataGp.Instance.User.characterToUse  = CharacterToUse.Child;
-             
+                DataGp.Instance.isChild = true;
+                DataGp.Instance.User.characterToUse = CharacterToUse.Child;
+                DataGp.Instance.User.Name = "Child";
+                DataGp.Instance.User.values.currentShirt =UnityEngine.Random.Range(1,6);
+                DataGp.Instance.User.values.currentPant = UnityEngine.Random.Range(1, 6);
+                DataGp.Instance.User.values.currentHair = UnityEngine.Random.Range(1, 6);
+                DataGp.Instance.User.values.currentCap = UnityEngine.Random.Range(1, 6);
+                DataGp.Instance.User.values.currentShoe = UnityEngine.Random.Range(1, 6);
+                DataGp.Instance.User.values.skinToneValue = UnityEngine.Random.Range(1, 6);
+                DataGp.Instance.User.email = "NoEmail";
+                DataGp.Instance.User.password = "NoPassword";
+                int test = UnityEngine.Random.Range(0, 2);
+                if (test == 0)
+                {
+                    DataGp.Instance.User.genders = Genders.Male;
+
+                }
+                else
+                {
+                    DataGp.Instance.User.genders = Genders.Female;
+
+                }
+                Name.text = "";
+                
+                Debug.Log("Child Enter");
             }
             else
             {
-                DataGp.Instance.User.characterToUse = CharacterToUse.Adult;
+                    var deserializedJson = JsonConvert.DeserializeObject(user);
+                    // Now, get the actual stringified JSON from the object and parse it again.
+                    string rawJson = deserializedJson.ToString();
+                    // Step 2: Deserialize the actual JSON object into the User class
+                    User userData = JsonConvert.DeserializeObject<User>(rawJson);
+                    DataGp.Instance.isChild = false;
+                    DataGp.Instance.User.Name = userData.publicProfile.displayName;
+                    DataGp.Instance.User.characterToUse = CharacterToUse.Adult;
+                    DataGp.Instance.User.values.currentShirt = userData.character.shirt;
+                    DataGp.Instance.User.values.currentPant = userData.character.pant;
+                    DataGp.Instance.User.values.currentHair = userData.character.hair;
+                    DataGp.Instance.User.values.currentCap = userData.character.cap;
+                    DataGp.Instance.User.values.currentShoe = userData.character.shoes;
+                    DataGp.Instance.User.values.skinToneValue = userData.character.skin;
+                    DataGp.Instance.User.email = userData.id;
+                    DataGp.Instance.User.password = userData.privateProfile.password;
+                    if (userData.character.gender == 'M')
+                    {
+                        DataGp.Instance.User.genders = Genders.Male;
+                    }
+                    else
+                    {
+                        DataGp.Instance.User.genders = Genders.Female;
 
+                    }
+                Name.text = userData.publicProfile.displayName;
+                // Log the user data for verification
+                     Debug.Log($"User ID: {userData.id}");
+                    Debug.Log($"User Display Name: {userData.publicProfile.displayName}");
+
+                
             }
+            
 
-            DataGp.Instance.User.values.currentShirt = userData.character.shirt;
-            DataGp.Instance.User.values.currentPant = userData.character.pant;
-            DataGp.Instance.User.values.currentHair = userData.character.hair;
-            DataGp.Instance.User.values.currentCap = userData.character.cap;
-            DataGp.Instance.User.values.currentShoe = userData.character.shoes;
-            DataGp.Instance.User.values.skinToneValue = userData.character.skin;
-            DataGp.Instance.User.email = userData.id;
-            DataGp.Instance.User.password = userData.privateProfile.password;
-            if (userData.character.gender == 'M')
-            {
-                DataGp.Instance.User.genders = Genders.Male;
-            }
-            else
-            {
-                DataGp.Instance.User.genders = Genders.Female;
-
-            }
-
-            // Log the user data for verification
-            Debug.Log($"User ID: {userData.id}");
-            Debug.Log($"User Display Name: {userData.publicProfile.displayName}");
 
         }
         catch (Exception ex)
         {
             Debug.LogError($"Error deserializing JSON: {ex.Message}");
         }
+        GameAnalyticsSDK.GameAnalytics.Initialize();
+
     }
 
 

@@ -6,17 +6,17 @@ public class LandingPageManager : MonoBehaviour
 {
     public Transform _Camera;
 
-    public Transform[] CamPos;
+    public SceneDetail[] CamPos;
 
     public int Index;
 
 
-    public void StartLerp(int index)
+    public void StartLerp(int index )
     {
-        StartCoroutine(LerpCam(CamPos[index]));
+        StartCoroutine(LerpCam(CamPos[index].Pos, CamPos[index].SceneName));
     }
 
-    IEnumerator LerpCam(Transform _Pos)
+    IEnumerator LerpCam(Transform _Pos , string sceneName)
     {
 
         float elapsed = 0;
@@ -31,7 +31,14 @@ public class LandingPageManager : MonoBehaviour
             elapsed += Time.deltaTime;
             yield return new WaitForEndOfFrame();
         }
+        MainMenuManager.Instance.ChangeScene(sceneName);
         _Camera.position = _Pos.position;
         _Camera.rotation = _Pos.rotation;
     }
+}
+[System.Serializable]
+public struct SceneDetail
+{
+    public Transform Pos;
+    public string SceneName;
 }
