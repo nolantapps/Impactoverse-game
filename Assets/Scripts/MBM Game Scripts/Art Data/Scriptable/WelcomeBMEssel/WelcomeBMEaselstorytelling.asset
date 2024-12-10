@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: WelcomeBMEaselstorytelling
+  m_EditorClassIdentifier: 
+  _ArtType: 20
+  _ArtName: Welcome Berthe Morisot
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 8009863f4c90cc04e80231a262e7b127, type: 3}
+    _ArtDetail:
+    - 'During the 19th century, people often shared their feelings and stories through
+      letters. Berthe wrote daily letters to her friends and family, people she cared
+      about, sharing both her happiness and frustrations. She often talked about
+      her daughter, Julie, and the joy she brought to her life. '
+    - "Berthe wrote to her sister Edma: \u201CMy daughter is like a kitten always
+      happy. She likes to laugh and play so much! She is round as a ball, with little
+      sparkling eyes and a large grinning mouth.\u201D "
+    - "At the age of ten, Julie began writing her 'memoirs' but it wasn\u2019t until
+      August 1893, at fourteen, that Julie began her diary in earnest: no neat leather-bound
+      volume with lock and key but just untidy notes scribbled in old exercise books,
+      often in pencil, the presentation as spontaneous as its contents. "
+    - 'Just like Berthe and Julie, you can write a story or a letter describing your
+      day or your artwork, using simple, heartfelt words. '
+    - "Try writing your own short story or letter today, imagining yourself in Julie\u2019s
+      time. What would you share with a friend about your day? What would you write
+      to your family about your dreams for the future? "
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 8009863f4c90cc04e80231a262e7b127, type: 3}
+    _ArtDetail:
+    - "For Impressionists like Berthe Morisot, letters provided a reflective space
+      to convey emotions and document life in a way that paintings couldn't. Berthe
+      and her family lived in Bougival, where she often described the landscapes
+      and her daughter\u2019s playful nature. Use this storytelling exercise to immerse
+      yourself in the epistolary tradition. Like Berthe, bring to life the scenes
+      you\u2019ve experienced or imagined through letters or narratives that capture
+      the mood of the moment. "
+    - "Berthe wrote: \u201CNothing forms one\u2019s style more effectively than recording
+      thoughts daily, not to turn out fine phrases, but to put one\u2019s thoughts
+      into words, with real feelings and personal ideas.\u201D (1884)\u200B"
+    - "In another letter, Berthe expresses her frustrations about the challenges
+      of balancing her art with motherhood and family obligations: \u201CThere is
+      a great deal to do, and I hardly know how to get around to painting.\u201D
+      There is no coincidence why she mostly painted at home in family settings,
+      on small formats and with a swift technique."
+    - "Julie started writing her \"memoirs\" at age 10 aware that she was growing
+      up in a famous artistic family, but it wasn\u2019t until she was 14, in August
+      1893, that she began keeping a diary more seriously. Her entries were not crafted
+      in a polished, leather-bound volume, but rather in untidy notes scribbled in
+      old exercise books, often in pencil. The informal presentation of her diary
+      mirrored the spontaneity of its contents, offering a raw and vivid look into
+      her life and the cultural atmosphere of late 19th-century France. "
+    - Write your own reflection or letter. You might explore how art, technology,
+      or society has changed in your lifetime, or how the interaction between these
+      fields might shape the future.
+    - 'Use the format of a letter or diary entry to express personal reflections. '
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 8009863f4c90cc04e80231a262e7b127, type: 3}
+    _ArtDetail:
+    - Welcome, esteemed creators!
+    - You've arrived at this exciting phase of your journey
+    - 'In this space, you can explore two distinct forms of creativity: painting
+      outdoors in the Impressionist style with broad brushstrokes and layered colors
+      or engaging in storytelling to narrate the inspiration behind your choice of
+      artwork.  '
+    - 'This is your opportunity to articulate your vision and connect with the Impressionist
+      legacy. We look forward to seeing how you interpret and share your creativity! '
+    - "For Impressionists like Berthe Morisot, letters provided a reflective space
+      to convey emotions and document life in a way that paintings couldn't. Berthe
+      and her family lived in Bougival, where she often described the landscapes
+      and her daughter\u2019s playful nature. Use this storytelling exercise to immerse
+      yourself in the epistolary tradition. Like Berthe, bring to life the scenes
+      you\u2019ve experienced or imagined through letters or narratives that capture
+      the mood of the moment. "
+    - "Berthe wrote: \u201CNothing forms one\u2019s style more effectively than recording
+      thoughts daily, not to turn out fine phrases, but to put one\u2019s thoughts
+      into words, with real feelings and personal ideas.\u201D (1884)\u200B "
+    - "In another letter, Berthe expresses her frustrations about the challenges
+      of balancing her art with motherhood and family obligations: \u201CThere is
+      a great deal to do, and I hardly know how to get around to painting.\u201D
+      There is no coincidence why she mostly painted at home in family settings,
+      on small formats and with a swift technique."

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: CircularEconomy
+  m_EditorClassIdentifier: 
+  _ArtType: 11
+  _ArtName: Circular Economy
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 1833b06e2a0c05a44b439a60c9bdf943, type: 3}
+    _ArtDetail:
+    - The park of Ginkgo Lab. is an amazing place where humans and animals lived
+      in harmony in a magical, balanced circle. There was a greenhouse, two vegetable
+      gardens, orchards full of fruits, and spaces for animals like Raka the parrot,
+      dogs (who had their kennel but were free to roam), cats, chickens, rabbits,
+      geese, a donkey, sheep, a pig, and even guinea pigs!
+    - 'In the woods, there were always things to forage and smell: wild strawberries,
+      mushrooms, nuts, walnuts, and fallen wood for making open fires and bake potatoes
+      in the ashes. It was a paradise for discovery, especially for children, with
+      something to snack on or explore at every turn. '
+    - 'Nothing was wasted here: preserves and jam filled up the shelves, leftover
+      meals fed the dogs, vegetable tops were given to the rabbits, chickens ate
+      organic scraps, fallen wood heated homes, and compost enriched the gardens.
+      Everything had a purpose.'
+    - What could you recycle or reuse in your daily life?
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 1833b06e2a0c05a44b439a60c9bdf943, type: 3}
+    _ArtDetail:
+    - "The park of Ginkgo lab. is a fascinating model of a circular ecosystem. The
+      property included a greenhouse, two vegetable gardens, fruit orchards, and
+      spaces for domesticated animals like Raka the parrot, dogs (who had their kennel
+      but roamed freely), cats, chickens, rabbits, geese, a donkey, sheep, a pig,
+      and even guinea pigs. The surrounding woods below Parc de la Jonqui\xE8re were
+      rich with wild strawberries, mushrooms, nuts, walnuts, and fallen wood for
+      making open fires and bake potatoes in the ashes."
+    - 'For both children and adults, there was always something to snack on or discover,
+      with varied scents filling the air. Nothing was wasted: preserves and jam filled
+      up the shelves, leftover meals fed the dogs, vegetable tops went to the rabbits,
+      chickens consumed organic scraps, fallen wood was used for heating, and compost
+      enriched the soil for the gardens. Every resource was carefully used.'
+    - How could you integrate these circular practices into your life to reduce waste
+      and reconnect with nature?"

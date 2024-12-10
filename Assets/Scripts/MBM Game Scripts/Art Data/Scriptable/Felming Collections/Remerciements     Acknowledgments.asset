@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: Remerciements     Acknowledgments
+  m_EditorClassIdentifier: 
+  _ArtType: 7
+  _ArtName: Remerciements Acknowledgments
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: d512172086a7dea4ba7ba3dfdf149a29, type: 3}
+    _ArtDetail:
+    - 'This exhibition is the culmination of the collaborative efforts, dedication,
+      and expertise of four curators and the institutions they represent. '
+    - Theodore Albano, Director of the Fleming-Wyfold Art Foundation, has offered
+      his profound knowledge of The Glasgow Girls & Boys group and provided us with
+      the remarkable works you see today.
+    - 'Marianne Magnin, Founder of The Cornelius Arts Foundation (TCAF), Gingko lab.
+      and Strategic Partner at Longhouse has been the driving force behind this project
+      from inception to completion. Her visionary leadership, belief in the transformative
+      power of the arts, and innovative R&D work at Gingko lab. were instrumental
+      in making the exhibition a reality. Without her unwavering dedication this
+      project would not come to fruition. '

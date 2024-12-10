@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: BMCOMMENTS
+  m_EditorClassIdentifier: 
+  _ArtType: 14
+  _ArtName: BM comments on women artists
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 0ab742b0f7938bb4fb85e09cfb9a38c5, type: 3}
+    _ArtDetail:
+    - 'The group of artists known as "The Boys of Glasgow" started without any girls!  '
+    - 'But then, a woman named Flora MacDonald Reid, who was married to John Reid
+      (one of the artists whose work you can see in the exhibition), became important
+      in their early days. Later on, in the 1890s, more young women started to become
+      famous too, and they were called the "Glasgow Girls." This name was only given
+      to them in 1988!  '
+    - 'For the first time, these pioneering women artists were shown alongside their
+      male friends. But they had to face many challenges because it was hard for
+      women to be recognised as artists back then. '
+    - "Even though I always saw myself as a professional artist, I was never officially
+      acknowledged that way. When I died on March 2, 1895, my death certificate didn\u2019t
+      even list me as an artist. "
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 0ab742b0f7938bb4fb85e09cfb9a38c5, type: 3}
+    _ArtDetail:
+    - 'The Girls and Boys of Glasgow were initially only known as The Boys of Glasgow. '
+    - 'One woman, Flora MacDonald Reid, the wife of John Reid, whose work you can
+      see in the exhibition, featured significantly in the early years. A younger
+      generation, now known as the Glasgow Girls, came to prominence in the 1890s.
+      The term was coined much later in 1988! '
+    - For the first time the pioneering women appeared alongside their male contemporaries.
+      But it also revealed the challenges faced by women seeking to forge careers
+      as artists.
+    - "Myself, despite having always positioned myself as a professional artist,
+      never received that accolade during my lifetime. On March 2, 1895, I died,
+      \u201Csans profession,\u201D according to the official parlance of my death
+      certificate. "

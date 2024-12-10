@@ -3,12 +3,22 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - ArtData
+  - FrontDoor
+  - WelcomeSpeach
+  - BasicZone
+  - Leaf
+  - CloverLeaf
+  - Pond
+  - Meditation
+  - ExhibitionDoor
+  - Easal
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 

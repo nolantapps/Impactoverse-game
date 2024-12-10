@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: BOUGIVAL WINDOW
+  m_EditorClassIdentifier: 
+  _ArtType: 0
+  _ArtName: BOUGIVAL WINDOW
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: cdea9faa80c1bf740afff9aca67b8d26, type: 3}
+    _ArtDetail:
+    - 'Bougival is a small, pretty town near Paris where many people from the city
+      used to go for fun by the river. In the 19th century, some families, like the
+      Manet-Morisot family, would rent houses in Bougival to enjoy the summer.  Now-famous
+      artists loved Bougival because of its beautiful nature. They would paint pictures
+      of the river, trees, and flowers. One of these artists was Berthe Morisot,
+      who liked to paint scenes of her family and nature. Today, you can visit Bougival
+      and see where these artists painted. '
+    - You will discover in the exhibition artworks by Berthe Morisot painted at Bougival
+      and its surroundings.
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: cdea9faa80c1bf740afff9aca67b8d26, type: 3}
+    _ArtDetail:
+    - "Bougival, a quaint town near Paris, holds a significant place in art history,
+      particularly during the 19th century when it became a favored retreat for Parisians.
+      Families like the Manet-Morisots would spend their summers here, drawn by the
+      town's serene environment. Bougival also became a hub for Impressionist artists
+      such as Berthe Morisot, Claude Monet, and Auguste Renoir. The town\u2019s picturesque
+      landscapes along the Seine River provided the perfect backdrop for these artists
+      to experiment with light, color, and composition, leading to some of the most
+      iconic works of the Impressionist movement. Today, Bougival is celebrated for
+      its rich artistic heritage and continues to attract those interested in the
+      intersection of art, history, and nature"
+    - Some of the artworks by Berthe Morisot exhibited were painted at Bougival and
+      its surroundings.

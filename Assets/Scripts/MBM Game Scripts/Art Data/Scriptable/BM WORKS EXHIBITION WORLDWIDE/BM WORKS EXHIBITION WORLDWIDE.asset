@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: BM WORKS EXHIBITION WORLDWIDE
+  m_EditorClassIdentifier: 
+  _ArtType: 4
+  _ArtName: BERTHE MORISOT'S WORK
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 0ad6fb95c9a32ae49878877fa7ac1f38, type: 3}
+    _ArtDetail:
+    - "When she died on 2 March 1895, Berthe Morisot\u2019s work was still little
+      known. It was mainly shown at Impressionist exhibitions. Rarely exhibited,
+      her paintings were not often found on the market.So,when the French State began
+      acquiring Impressionist paintings in the early 20th century, Morisot\u2019s
+      were difficult to find However, her daughter Julie\u2019s husband Ernest Rouart
+      and their subsequent descendants promoted all of her work. "
+    - "Nevertheless, as the \u201Cfirst woman Impressionist\u201D.her work was exhibited
+      abroad. In the United States, art enthusiasts took an early interest in her
+      work and museums began to add her paintings to their collections regularly
+      from the late 1920s onwards. And since the 2000s, Japanese museums have brought
+      together a number of pieces, thus adding to the artist\u2019s renown and confirming
+      the new interest\_in\_her\_work."

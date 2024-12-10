@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: Maison c
+  m_EditorClassIdentifier: 
+  _ArtType: 13
+  _ArtName: Maison C
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 0}
+    _ArtDetail:
+    - 'Ginkgo lab. is a place full of fascinating stories! This estate once belonged
+      to King Louis XIV, who gave it to his favorite daughter, Mademoiselle de Blois.
+      Today, a pavilion near the Seine, a section of the royal alley, a horse drinking
+      point, an icehouse and a very old tree, the famous Ginkgo Biloba, nicknamed
+      ''the tree with one thousand golden coins,'' remain from that time. '
+    - 'The house you see, called Maison C, was built around 1830 by the Corpet family
+      as a weekend retreat. Later, Cornelius and Yvonne van Droogenbroeck bought
+      the house to live here year-round with their family. They also welcomed and
+      hosted writers, musicians and artists like Jean-Michel Folon, who lived in
+      a small house on the property before becoming famous. '
+    - Can you imagine all the stories and creative moments that happened here?
+  - _Agegroup: 1
+    _Images: {fileID: 0}
+    _ArtDetail:
+    - 'Ginkgo lab. is an estate where royal history and artistic heritage intertwine.
+      This estate was acquired around 1704 by Louis XIV for his favorite daughter,
+      Mademoiselle de Blois. From that time, only a pavilion near the Seine, a section
+      of the royal alley, a horse drinking point, an icehouse and a 300-year-old
+      tree, the Ginkgo Biloba, remain. This tree is likely one of the first ginkgos
+      planted in France. '
+    - The main house, called Maison C, was built around 1830 by the Corpet family
+      as a weekend retreat. Later, Cornelius and Yvonne van Droogenbroeck bought
+      this property to live here full-time with their children. They also turned
+      it into an artistic hub by hosting writers, musicians and artists, including
+      Jean-Michel Folon, who lived in a side house before gaining fame.
+    - How could this place, rich in history, art, and nature, inspire your own creativity?

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: ARTISTICGUIDANCE
+  m_EditorClassIdentifier: 
+  _ArtType: 15
+  _ArtName: ARTISTIC GUIDANCE
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 0ab742b0f7938bb4fb85e09cfb9a38c5, type: 3}
+    _ArtDetail:
+    - 'Style: Use bright colors and big, bold shapes to depict your outdoor scene.'
+    - 'Nature Focus: Include at least one element from nature, like trees, flowers,
+      or animals. '
+    - 'Help: You can ask a grown-up for advice, but the work should be your own creation.'
+    - 'Submission: Upload a clear photo of your artwork if created IRL, or submit
+      your digital file directly. '
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 0ab742b0f7938bb4fb85e09cfb9a38c5, type: 3}
+    _ArtDetail:
+    - 'Style: Explore complex compositions and subtle color palettes that reflect
+      the mood of the outdoors.'
+    - 'Expression: Focus on conveying emotion through your depiction of the outdoor
+      scene, considering how light and atmosphere influence the environment.'
+    - "Concept: You may include an artist\u2019s statement (100-200 words) to explain
+      your artistic choices and the narrative behind your work. "
+    - "Submission: Submit a high-resolution image or digital file, along with your
+      artist\u2019s statement. "

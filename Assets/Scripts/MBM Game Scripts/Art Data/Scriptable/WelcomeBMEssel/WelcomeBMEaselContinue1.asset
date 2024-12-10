@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: WelcomeBMEaselContinue1
+  m_EditorClassIdentifier: 
+  _ArtType: 19
+  _ArtName: Lets Start
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 8009863f4c90cc04e80231a262e7b127, type: 3}
+    _ArtDetail:
+    - 'Fun with Big Brush Strokes '
+    - 'Welcome, young artists! You''ve made it to the final stage of your journey,
+      and now it''s time to show us your creative spirit.  '
+    - "Just like Berthe Morisot and the other Impressionists, you\u2019ll be painting
+      in the open air, with big, bold brushstrokes! No need for sketches\u2014let
+      your imagination run wild! Remember, don't mix the colors on your palette\u2014layer
+      them quickly, like a true Impressionist. Let\u2019s see your masterpiece!"
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 8009863f4c90cc04e80231a262e7b127, type: 3}
+    _ArtDetail:
+    - Master the Art of Plein Air Painting
+    - "Welcome to the final phase of the game! Like the Impressionist painters before
+      you, you\u2019re tasked with creating a work of art outdoors\u2014no sketching,
+      just bold, swift brushstrokes and layered colors.   "
+    - "Berthe Morisot and her peers worked quickly to capture the essence of nature.
+      Now, it\u2019s your turn to channel their technique and make your mark. Embrace
+      the spontaneity, and let your creative instincts take over. We\u2019re excited
+      to witness your artistic expression! "

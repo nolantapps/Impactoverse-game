@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: "Impressions \xC9cossaises 2"
+  m_EditorClassIdentifier: 
+  _ArtType: 6
+  _ArtName: Percpectives
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 7aa7eaf0c91cb904a98c86689bf189f2, type: 3}
+    _ArtDetail:
+    - As you explore this exhibition, we invite you to consider how these works,
+      whether French or Scottish,are connected by their shared fascination with nature,
+      childhood, and everyday moments of life.
+    - "En explorant cette exposition, nous vous invitons \xE0 consid\xE9rer comment
+      ces \u0153uvres, qu\u2019elles soient fran\xE7aises ou \xE9cossaises, sont
+      li\xE9es par leur fascination commune pour la nature, l\u2019enfance et les
+      moments quotidiens de la vie. "

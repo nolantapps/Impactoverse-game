@@ -53,8 +53,14 @@ public class CharacterSelector : MonoBehaviour
     }
     public void SetCap()
     {
-        currentCharacter.caps[DataGp.Instance.User.values.currentCap].SetActive(true);
-
+        try
+        {
+            currentCharacter.caps[DataGp.Instance.User.values.currentCap].SetActive(true);
+        }
+        catch
+        {
+            Debug.LogError(DataGp.Instance.User.values.currentCap);
+        }
     }
     public void SetGlasses()
     {

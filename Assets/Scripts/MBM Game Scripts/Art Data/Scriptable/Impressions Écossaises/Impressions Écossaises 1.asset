@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: "Impressions \xC9cossaises 1"
+  m_EditorClassIdentifier: 
+  _ArtType: 5
+  _ArtName: "Impressions \xC9cossaises"
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 4f2d174052f1aec46b1f65258f27390c, type: 3}
+    _ArtDetail:
+    - 'This inaugural exhibition of Scottish Impressionist paintings celebrates the
+      connection between Scottish and French artists of the late 19th century. Featuring
+      some of the finest works from The Glasgow Girls and Boys, on loan from the
+      Fleming Collection, the exhibition explores the relationship between these
+      two movements, united in their quest to capture the essence of nature and everyday
+      life. Both The Glasgow Girls and Boys and Berthe Morisot share similarities
+      in technique, their focus on capturing fleeting moments en plein air, and their
+      emphasis on the natural world and children. '
+    - "The Glasgow Boys first gained prominence in the mid-1880s when a group of
+      around 15 young artists exhibited at the Glasgow gallery of art dealer Alexander
+      Reid. Though lacking a formal manifesto, they were united in their desire to
+      challenge the prevailing Academicism and the conventions of the Royal Scottish
+      Academy. While remaining within the tradition of Scottish landscape painting,
+      they drew inspiration from the freer, more vibrant style of their French counterparts,
+      whom they encountered through Reid and at artists\u2019 colonies along the
+      Seine, including Bougival. The group embraced a modern, realist approach they
+      found in France, and their departure from conventional academic styles sparked
+      a rebellion that had a lasting influence on Scotland\u2019s artistic identity.
+      As chroniclers of modern life, they are now regarded as some of the most significant
+      painters of the 19th century. "
+    - "Five of these artists are featured in the exhibition: Edward Hornel, William
+      MacGeorge, John Reid, Alexander Roche, and William Yule. The contributions
+      of their female counterparts were not widely recognised until the 1980s, which
+      led to the more inclusive label The Glasgow Girls and Boys. This shift in recognition
+      parallels the recent reevaluation of Berthe Morisot, once seen primarily as
+      Edouard Manet\u2019s muse. Morisot\u2019s pioneering role in the Impressionist
+      movement was long overshadowed by her relationship with Manet, but in recent
+      decades, her groundbreaking work has been rightfully acknowledged as a key
+      contribution to the movement"

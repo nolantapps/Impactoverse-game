@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: WelcomeRaka
+  m_EditorClassIdentifier: 
+  _ArtType: 10
+  _ArtName: The Story of Raka the Grey Parrot
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: d544a5683f5c33a4581accd67667bb21, type: 3}
+    _ArtDetail:
+    - Once upon a time in Bougival, there was a Congo grey parrot named Raka. He
+      had traveled a long way from Africa on a ship, brought by a captain as a gift
+      for his aunt, Yvonne, who lived in a big house called Maison C.
+    - 'Yvonne named the parrot "Raka," after a princess from The Thousand and One
+      Nights. The name came from ancient tales, full of adventure and mystery, and
+      it seemed perfect for this young parrot with a distant and unknown past. '
+    - "Raka was young and wild when he first arrived, just 6 months old, and he missed
+      the forests of his homeland. But Yvonne\u2019s daughter, Jenny, decided to
+      care for him and teach him to feel at home. Slowly, Raka grew to trust Jenny.
+      He loved her so much that he would sit on her shoulder, and he even shared
+      sunflower seeds with her\u2014a sign of his deep affection."
+    - "Raka was a clever parrot. He could imitate voices in the house, answer the
+      phone by saying, \"All\xF4, ici le 14,\" and whistle beautiful tunes. Jenny
+      and Raka spent many peaceful moments together. She would walk to the woods
+      with him, and he would fly around but always return to her. Their bond was
+      special, like a silent understanding between two friends."
+    - 'But when Jenny grew older, she moved away to start her own family. Raka became
+      lonely without her and sometimes flew off for days, searching for something
+      familiar. Yvonne would call Jenny back to Maison C to say his name, and only
+      then would Raka return, hearing the voice he loved. '
+    - "One day in the 1970s, Raka flew away and didn\u2019t come back. Yvonne found
+      a few grey feathers scattered in the park. Jenny was heartbroken and still
+      remembers her dear friend Raka, the companion who understood her in ways only
+      he could."
+    - "Today, Congo grey parrots are a protected species, and it\u2019s illegal to
+      take them from their homes in the wild. They are rare and precious, just like
+      the bond Jenny had with Raka."

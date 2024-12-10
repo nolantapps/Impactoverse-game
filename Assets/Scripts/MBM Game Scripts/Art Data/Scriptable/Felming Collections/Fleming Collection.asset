@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: Fleming Collection
+  m_EditorClassIdentifier: 
+  _ArtType: 7
+  _ArtName: FLEMING COLLECTION
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 17218e4a01f562a4eadc1e270fd79261, type: 3}
+    _ArtDetail:
+    - 'The Fleming Collection is a big collection of Scottish art that started in
+      1968 by Flemings Bank to help keep Scottish art safe and remembered.  '
+    - Even though there's no proof that I ever met the "Girls and Boys of Glasgow,"
+      some of them did visit Paris and nearby places to meet my group, the Impressionists.
+    - 'The Glasgow Girls and Boys were a group of rebellious young artists who became
+      famous in the early 1880s for painting real-life scenes in the countryside.
+      There were about 20 painters in this group, including John Lavery, Bessie MacNicol,
+      Edward Hornel, Alexander Roche, and James Guthrie. '
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 17218e4a01f562a4eadc1e270fd79261, type: 3}
+    _ArtDetail:
+    - 'The Fleming Collection is a significant collection of Scottish art founded
+      by Flemings Bank in 1968. This initiative was taken by Flemings Bank to foster
+      and preserve Scottish artistic heritage. '
+    - Whilst there is no evidence that I ever met the Girls and Boys of Glasgow,
+      it is well documented that a number of them visited Paris and its surroundings
+      to meet our group, the Impressionists.
+    - 'The Glasgow Girls and Boys were a group of rebellious young artists who sprang
+      to prominence in the early 1880s as radical painters of rural life in all its
+      start reality. Numbering around 20 painters, the group included John Lavery,
+      Bessie MacNicol, Edward Hornel, Alexander Roche, James Guthrie. '

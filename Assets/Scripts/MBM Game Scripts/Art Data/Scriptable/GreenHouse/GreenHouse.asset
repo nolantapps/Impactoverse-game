@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: GreenHouse
+  m_EditorClassIdentifier: 
+  _ArtType: 12
+  _ArtName: Green House
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 0}
+    _ArtDetail:
+    - 'Welcome to the 19th-century Dutch greenhouse! This greenhouse was a very important
+      place in the park. Seeds were planted here, fragile flowers like fuchsias spent
+      the winter inside, and plants were repotted to grow stronger. All what was
+      grown was for the people living on the property to enjoy. A fertile land, the
+      Seine Valley around Bougival was famous for feeding Paris with its gardeners
+      and farmers. Berthe and her family enjoyed it too. '
+    - 'Yvonne - who adopted Raka the Grey Parrot as you remember and who lived in
+      Maison C, came here at least twice a day to check the temperature and water
+      the plants. She kept doing this until the incredible age of 103, which kept
+      her fit and independent.  '
+    - "Remember: go outside often, stay active, and enjoy the fresh air! Now, try
+      to find Maison C. Here\u2019s a clue: its name starts with the letter C."
+  - _Agegroup: 1
+    _Images: {fileID: 0}
+    _ArtDetail:
+    - "This is the 19th-century Dutch greenhouse, an essential part of the park.
+      This greenhouse played a key role in the park\u2019s lifecycle. Seeds were
+      planted here, fragile plants like fuchsias wintered here, and repotting prepared
+      plants for the next season. Whilst this was for the occupants\u2019 consumption
+      and enjoyment, the Seine Valley around Bougival was very fertile and once a
+      major agricultural hub, where gardeners and farmers grew fruits and vegetables
+      for Paris. Berthe Morisot, her family and visiting friends will have enjoyed
+      it too. "
+    - 'Yvonne, who lived in Maison C, visited this greenhouse at least twice a day
+      to check the temperature and water the plants. She maintained this routine
+      until the incredible age of 103, which helped her stay independent and healthy.  '
+    - "Remember, it\u2019s important to go outdoors and stay active! Now, continue
+      your journey: find Maison C. Hint: its name starts with the letter C."

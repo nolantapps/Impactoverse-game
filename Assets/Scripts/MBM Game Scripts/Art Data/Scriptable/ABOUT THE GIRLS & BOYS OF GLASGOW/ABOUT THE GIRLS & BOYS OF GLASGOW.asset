@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: ABOUT THE GIRLS & BOYS OF GLASGOW
+  m_EditorClassIdentifier: 
+  _ArtType: 2
+  _ArtName: ABOUT THE GIRLS & BOYS OF GLASGOW
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 71a175f9c52b53a40a89ac2243d4a500, type: 3}
+    _ArtDetail:
+    - 'In the 1880s, a group of about 15 young artists in Glasgow (Scotland) became
+      known as the "Glasgow Boys." They painted scenes of everyday life in the countryside,
+      showing it just as it was. They got ideas from new styles of French painting
+      and made friends in art communities in France and Scotland. They were rebels! '
+    - 'While most of the early artists were men, one woman named Flora Macdonald
+      Reid was also important. Later, in the 1890s, another group of talented women
+      artists, now called the "Glasgow Girls," came onto the scene. They weren''t
+      called this at the time; the name was given to them during an exhibition in
+      1988 to honor these amazing, but often forgotten, women artists. '
+    - You will discover 5 of these artists in the exhibition.
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 71a175f9c52b53a40a89ac2243d4a500, type: 3}
+    _ArtDetail:
+    - 'The moniker ''Glasgow Boys'' dates back to the mid-1880s when a group of around
+      15 young artists came to prominence in Glasgow as documentary painters of rural
+      life in all its stark reality, having, broadly speaking, coalesced through
+      friendships made at artists'' colonies in France and Scotland fed by a shared
+      awareness of international trends, especially in cutting-edge French Naturalist
+      painting. Their rebellious spirit was evident in their departure from conventional
+      academic styles, embracing instead a more modern, realist approach that was
+      considered radical at the time. '
+    - 'Only one woman, Flora Macdonald Reid, featured significantly in these early
+      years, while a younger generation, now known as the Glasgow Girls, came to
+      prominence in the 1890s. They were not known then by that name, which was coined
+      in 1988 as the title of an exhibition at Glasgow School of Art which shone
+      the spotlight on a long-forgotten group of brilliant women artists and designers. '
+    - 'Five of these artists are featured in the exhibition: Edward Hornel, William
+      MacGeorge, John Reid, Alexander Roche and  William Yule.'

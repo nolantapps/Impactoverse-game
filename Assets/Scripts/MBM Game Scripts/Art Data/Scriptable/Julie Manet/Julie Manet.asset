@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: Julie Manet
+  m_EditorClassIdentifier: 
+  _ArtType: 16
+  _ArtName: Julie Manet
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 0ab742b0f7938bb4fb85e09cfb9a38c5, type: 3}
+    _ArtDetail:
+    - "I am Julie, the daughter of Berthe Morisot and Eug\xE8ne Manet, who married
+      at the end of 1874. I was born almost four years later in 1878. "
+    - "My family calls me Bibi. This is how my mum described me when newly born in
+      letters to her sister and niece: \u201CJulie or Rose is like a big inflated
+      balloon\u201D - \u201Cmy little Bibi is sweet as an angel, though horribly
+      quick-tempered\u2026 she likes to laugh and play so much! She is like a kitten,
+      always happy, shis is round as a ball, she has little sparkling eyes, and a
+      large grinning mouth\u201D "
+    - "And I call myself Bibi Manet. My mum wrote this anecdote in 1881: \u201CI
+      shall tell you that she likes the street more than anything in the world, that
+      she makes advances to all the children in Bougival, and is very popular there.
+      From every door one hears, 'Good day, Mademoiselle Julie'. When she is asked
+      her name she answers very politely, \u2018Bibi Manet\u2019.\u201D "
+    - 'My nanny Pasie is often portrayed with me in the paintings by my mum. '
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 0ab742b0f7938bb4fb85e09cfb9a38c5, type: 3}
+    _ArtDetail:
+    - "I am Julie Rose, the daughter of Berthe Morisot and Eug\xE8ne Manet, who married
+      at the end of 1874. I was born almost four years later in November 1878."
+    - "My family calls me Bibi. This is how my mum described me when newly born in
+      letters to her sister and niece: \u201CJulie or Rose is like a big inflated
+      balloon\u201D - \u201Cmy little Bibi is sweet as an angel, though horribly
+      quick-tempered\u2026 she likes to laugh and play so much! She is like a kitten,
+      always happy, shis is round as a ball, she has little sparkling eyes, and a
+      large grinning mouth\u201D "
+    - "BM wrote in 1881: \u201CI shall tell you that she likes the street more than
+      anything in the world, that she makes advances to all the children in Bougival,
+      and is very popular there. From every door one hears, 'Good day, Mademoiselle
+      Julie'. When she is asked her name she answers very politely, \u2018Bibi Manet\u2019.
+      This made two cocottes walking along the bank laugh till they cried. They no
+      doubt thought that she was the daughter of the famous Manet put out to nurse
+      in this village of boating girls.\u201D  "

@@ -8341,7 +8341,7 @@ MonoBehaviour:
   PlayerController: {fileID: 290563804}
   RotationReference: 0
   UpdateMode: 1
-  KeepAliveOnLoad: 1
+  KeepAliveOnLoad: 0
   useRadar: 0
   radarMode: 1
   radarZoom: 1
@@ -13502,7 +13502,7 @@ MonoBehaviour:
   - Pos: {fileID: 846972777}
     SceneName: Impactoverse
   - Pos: {fileID: 1039809033}
-    SceneName: MBM Space
+    SceneName: MBMGameScene
   Index: 0
 --- !u!4 &550659012
 Transform:

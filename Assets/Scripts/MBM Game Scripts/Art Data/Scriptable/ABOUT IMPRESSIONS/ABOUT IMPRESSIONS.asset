@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: ABOUT IMPRESSIONS
+  m_EditorClassIdentifier: 
+  _ArtType: 1
+  _ArtName: ABOUT IMPRESSIONS
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 45c62eaec3a8abe47b69248b269bae4d, type: 3}
+    _ArtDetail:
+    - "Impressionism is a way of painting that captures moments in time, like a sunny
+      day or a beautiful sunset. Artists like Berthe Morisot and Claude Monet loved
+      using bright colors and quick brushstrokes to show the feeling of a scene,
+      as if it\u2019s happening right in front of you."
+    - 'In the exhibition, you''ll see how Berthe Morisot, one of the first Impressionist
+      painters, inspired artists from other countries to paint in her special way. '
+    - "After exploring the exhibition, you\u2019ll get a fun lesson on how to paint
+      outside just like the Impressionists \u2014 or in your own style \u2014 and
+      enter your artwork in an international exhibition! "
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 45c62eaec3a8abe47b69248b269bae4d, type: 3}
+    _ArtDetail:
+    - 'Impressionism, emerging in the late 19th century, was a groundbreaking movement
+      that broke away from traditional art forms. Pioneers like Berthe Morisot and
+      Claude Monet focused on depicting the fleeting effects of light and color,
+      often painting en plein air to capture the immediacy of the natural world.
+      Their works emphasized the sensory impression of a scene rather than its exact
+      details, forever changing the landscape of art. '
+    - Explore the exhibition to uncover how Berthe Morisot, a trailblazing figure
+      of Impressionism, not only shaped the movement but also inspired international
+      artists to adopt and evolve her innovative techniques.
+    - After immersing yourself in the exhibition, you'll have the opportunity to
+      participate in a plein air painting tutorial, where you can choose to adopt
+      the Impressionist technique or explore a style of your own. Your creation can
+      then be submitted to an international exhibition.

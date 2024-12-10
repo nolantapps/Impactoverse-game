@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: MEET RAKA
+  m_EditorClassIdentifier: 
+  _ArtType: 3
+  _ArtName: 
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 21300000, guid: 2166434863d87d0429e4e67971ee3d40, type: 3}
+    _ArtDetail:
+    - "Hello, my name is Raka, the Congo grey parrot! I am your companion in this
+      game. I\u2019ll guide you through amazing places and help you uncover secrets
+      about art and nature. If you need a clue or a little help, look for my special
+      icon: a grey parrot. Click on it, and I\u2019ll give you a hint.  "
+    - You will also get the chance to learn my fascinating story in the Ginkgo lab.
+      park.
+    - "Ready for the adventure? Let\u2019s go!"
+  - _Agegroup: 1
+    _Images: {fileID: 21300000, guid: 2166434863d87d0429e4e67971ee3d40, type: 3}
+    _ArtDetail:
+    - "Hello, I am Raka, a Congo grey parrot, and I will be your companion throughout
+      this immersive adventure. My role is to guide you and provide hints. Whenever
+      you see my icon, a grey parrot, don\u2019t hesitate to click on it: I\u2019ll
+      be there to assist you.  "
+    - 'You will also have the chance to learn my fascinating story in the Ginkgo
+      lab. park.  '
+    - "Together, let\u2019s explore captivating BBB spaces and dive into the history
+      of art like never before."
