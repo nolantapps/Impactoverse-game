@@ -99,7 +99,7 @@ public class Gingko : MonoBehaviour
     {
         if (!IsLearnedGingko)
         {
-            _GinkoPanel.SetActive(true);
+            //_GinkoPanel.SetActive(true);
             _BoxColliderTrigger.enabled = false;
             _outline.enabled = false;
             _BoxCollderPower.enabled = true;
@@ -110,6 +110,6 @@ public class Gingko : MonoBehaviour
     public void PowerGainComplete()
     {
         TokenSystem.Instance.UpdateToken(5, TokenTypes.Nature_Lover);
-        _SpawnManager._UIManager.ShowMoodPanel = true;
+        //_SpawnManager._UIManager.ShowMoodPanel = true;
     }
 }

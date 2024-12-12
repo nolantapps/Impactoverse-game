@@ -22,7 +22,9 @@ public class PlayerCollisionData : MonoBehaviour
         }
         if (other.CompareTag(FrontDoor))
         {
-            _UIManager.SelectPuzzlePanel.SetActive(true);
+            _GameManager.OpenDoor();
+
+            //_UIManager.SelectPuzzlePanel.SetActive(true);
         }
         if (other.CompareTag(WelcomeSpeach))
         {

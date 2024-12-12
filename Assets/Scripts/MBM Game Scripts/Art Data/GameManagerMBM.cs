@@ -80,7 +80,7 @@ public class GameManagerMBM : MonoBehaviour
     void TeleportPlayer()
     {
         _SpawnManager.TeleportPlayerToGinko();
-        _MoodTracking.SetMoodPanel(0);
+        //_MoodTracking.SetMoodPanel(0);
     }
 
     public void BMHUDStatus(bool state)
