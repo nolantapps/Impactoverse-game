@@ -110,6 +110,6 @@ public class Gingko : MonoBehaviour
     public void PowerGainComplete()
     {
         TokenSystem.Instance.UpdateToken(5, TokenTypes.Nature_Lover);
-        //_SpawnManager._UIManager.ShowMoodPanel = true;
+        _SpawnManager._UIManager.ShowMoodPanel = true;
     }
 }
