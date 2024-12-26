@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,6 +8,7 @@ public class MainMenuManager : MonoBehaviour
 {
     [SerializeField] private GameObject LoadingScreen;
     [SerializeField] private GameObject LoadingScene;
+    [SerializeField] private TextMeshProUGUI NameText;
     public static MainMenuManager Instance;
     private void Awake()
     {
@@ -14,7 +16,7 @@ public class MainMenuManager : MonoBehaviour
     }
     private void Start()
     {
-        
+        NameText.text = DataGp.Instance.User.Name;
     }
     public  void ChangeScene( string SceneName)
     {

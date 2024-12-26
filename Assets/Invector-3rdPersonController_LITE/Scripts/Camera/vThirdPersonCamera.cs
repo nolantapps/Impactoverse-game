@@ -86,6 +86,10 @@ public class vThirdPersonCamera : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (GameManagerMBM.instance.CurrentCursorState)
+        {
+            return;
+        }
         if (target == null || targetLookAt == null) return;
 
         CameraMovement();

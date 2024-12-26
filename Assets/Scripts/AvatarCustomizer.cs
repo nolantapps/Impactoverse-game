@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Winz;
 using TMPro;
+using Invector.vCharacterController;
 
 public class AvatarCustomizer : MonoBehaviour
 {
@@ -162,6 +163,11 @@ public class AvatarCustomizer : MonoBehaviour
             currentIndices[1] = 1;
 
         }
+        if (currentIndices[3] == 0)
+        {
+            currentIndices[3] = 1;
+
+        }
         SetActiveItems(currentCharacter.shirts, currentIndices[0]);
         SetActiveItems(currentCharacter.pants, currentIndices[1]);
         SetActiveItems(currentCharacter.shoes, currentIndices[2]);
@@ -175,7 +181,7 @@ public class AvatarCustomizer : MonoBehaviour
         SetActiveItems(currentCharacter.pants, currentIndices[1]);
         SetActiveItems(currentCharacter.shoes, currentIndices[2]);
         SetActiveItems(currentCharacter.hairs, currentIndices[3]);
-        SetActiveItems(currentCharacter.caps, currentIndices[4]);
+        //SetActiveItems(currentCharacter.caps, currentIndices[4]);
         SetActiveItems(currentCharacter.glasses, currentIndices[5]);
         PlayerSkinColor();
     }
@@ -277,6 +283,8 @@ public struct CharacterValues
     public GameObject Model;
     public GameObject[] shirts, pants, shoes, hairs, caps, glasses, allMesh;
     public Renderer baseMeshRenderer;
+    public vThirdPersonController controller;
+
 }
 
 public enum Genders { Male, Female }

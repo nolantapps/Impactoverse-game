@@ -24,11 +24,12 @@ public class MeditationManager : MonoBehaviour
 
     public float TotalTokens;
 
+    public CharacterSelector _CharacterSelector;
    
     public void Breathing()
     {
         _Animator.SetTrigger("breathing");
-        
+        SoundSystemMBM.Instance.PlayPowerGainMeditation();
     }
     public void idleAnimation()
     {
@@ -72,18 +73,22 @@ public class MeditationManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
     }
-    private IEnumerator Start()
+    void Start()
     {
         index = 0;
-        yield return new WaitForSeconds(1f);
-        
-        foreach (Animator a in _TotalAnimators)
-        {
-            if (a.gameObject.activeInHierarchy)
-            {
-                _Animator = a;
-            }
-        }
+
+        //Invoke(nameof(GetCharacter), 1f);
+        //foreach (Animator a in _TotalAnimators)
+        //{
+        //    if (a.gameObject.activeInHierarchy)
+        //    {
+        //        _Animator = a;
+        //    }
+        //}
+    }
+    void GetCharacter()
+    {
+        _Animator = _CharacterSelector.currentCharacter.Model.GetComponent<Animator>();
     }
     public void StartMeditation()
     {
@@ -101,6 +106,7 @@ public class MeditationManager : MonoBehaviour
         _Cam.SetActive(true);
         _Spot.SetActive(false);
         _DescriptionPanel.SetActive(true);
+        Invoke(nameof(GetCharacter), 1f);
     }
     public void PlayMeditation()
     {
@@ -151,6 +157,7 @@ public class MeditationManager : MonoBehaviour
         gameObject.SetActive(false);
         _UIManager.GamePlayBttns(true);
         TokenSystem.Instance.UpdateToken(TotalTokens,TokenTypes.Nature_Lover);
+        _UIManager.ShowMoodPanel = true;
     }
 }
 [System.Serializable]

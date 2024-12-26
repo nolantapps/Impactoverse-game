@@ -31,6 +31,7 @@ namespace Invector.vCharacterController
 
         protected virtual void FixedUpdate()
         {
+           
             cc.UpdateMotor();               // updates the ThirdPersonMotor methods
             cc.ControlLocomotionType();     // handle the controller locomotion type and movespeed
             cc.ControlRotationType();       // handle the controller rotation type
@@ -38,12 +39,14 @@ namespace Invector.vCharacterController
 
         protected virtual void Update()
         {
+           
             InputHandle();                  // update the input methods
             cc.UpdateAnimator();            // updates the Animator Parameters
         }
 
         public virtual void OnAnimatorMove()
         {
+            
             cc.ControlAnimatorRootMotion(); // handle root motion animations 
         }
 
@@ -83,12 +86,25 @@ namespace Invector.vCharacterController
 
         public virtual void MoveInput()
         {
-            cc.input.x = Input.GetAxis(horizontalInput);
-            cc.input.z = Input.GetAxis(verticallInput);
+            if (GameManagerMBM.instance.CurrentCursorState)
+            {
+                cc.input = Vector2.zero;
+                Debug.Log(cc.input);
+            }
+            else
+            {
+                cc.input.x = Input.GetAxis(horizontalInput);
+                cc.input.z = Input.GetAxis(verticallInput);
+            }
+          
         }
 
         protected virtual void CameraInput()
         {
+            //if (GameManagerMBM.instance.CurrentCursorState)
+            //{
+            //    return;
+            //}
             if (!cameraMain)
             {
                 if (!Camera.main) Debug.Log("Missing a Camera with the tag MainCamera, please add one.");
@@ -115,12 +131,20 @@ namespace Invector.vCharacterController
 
         protected virtual void StrafeInput()
         {
+            //if (GameManagerMBM.instance.CurrentCursorState)
+            //{
+            //    return;
+            //}
             if (Input.GetKeyDown(strafeInput))
                 cc.Strafe();
         }
 
         protected virtual void SprintInput()
         {
+            //if (GameManagerMBM.instance.CurrentCursorState)
+            //{
+            //    return;
+            //}
             if (Input.GetKeyDown(sprintInput))
                 cc.Sprint(true);
             else if (Input.GetKeyUp(sprintInput))
@@ -141,6 +165,10 @@ namespace Invector.vCharacterController
         /// </summary>
         protected virtual void JumpInput()
         {
+            if (GameManagerMBM.instance.CurrentCursorState)
+            {
+                return;
+            }
             if (Input.GetKeyDown(jumpInput) && JumpConditions())
                 cc.Jump();
         }

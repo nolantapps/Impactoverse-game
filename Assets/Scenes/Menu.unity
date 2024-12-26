@@ -19355,6 +19355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadingScreen: {fileID: 117525579}
   LoadingScene: {fileID: 0}
+  NameText: {fileID: 112653465}
 --- !u!1001 &727386715
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -5,11 +5,11 @@ using UnityEngine;
 public class CharacterSelector : MonoBehaviour
 {
     [SerializeField] private CharacterValues[] characters; 
-    private CharacterValues currentCharacter;
+    public CharacterValues currentCharacter;
     private int currentShirt;
     private int currentPant;
     private int currentShoes;
-  
+    
     private void Start()
     {
         LoadCharacter();
@@ -17,7 +17,7 @@ public class CharacterSelector : MonoBehaviour
         SetPant();
         SetShoes();
         SetHair();
-        SetCap();
+        //SetCap();
         SetGlasses();
     }
     public void LoadCharacter()
@@ -53,14 +53,14 @@ public class CharacterSelector : MonoBehaviour
     }
     public void SetCap()
     {
-        //try
-        //{
-        //    currentCharacter.caps[DataGp.Instance.User.values.currentCap].SetActive(true);
-        //}
-        //catch
-        //{
-        //    Debug.LogError(DataGp.Instance.User.values.currentCap);
-        //}
+        try
+        {
+            currentCharacter.caps[DataGp.Instance.User.values.currentCap].SetActive(true);
+        }
+        catch
+        {
+            Debug.LogError(DataGp.Instance.User.values.currentCap);
+        }
     }
     public void SetGlasses()
     {

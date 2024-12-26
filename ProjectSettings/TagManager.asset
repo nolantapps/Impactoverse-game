@@ -14,6 +14,8 @@ TagManager:
   - Meditation
   - ExhibitionDoor
   - Easal
+  - ArtDataTag
+  - Key
   layers:
   - Default
   - TransparentFX

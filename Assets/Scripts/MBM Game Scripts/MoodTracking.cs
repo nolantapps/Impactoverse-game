@@ -28,6 +28,7 @@ public class MoodTracking : MonoBehaviour
     {
         Debug.Log(_Bttn.row + " , " + _Bttn.column);
         _MoodPanel.SetActive(false);
-        TokenSystem.Instance.UpdateToken(TokenAmount,TokenTypes.Philanthropist);
+        TokenSystem.Instance.UpdateToken(TokenAmount, TokenTypes.Philanthropist);
+
     }
 }

@@ -1,3 +1,4 @@
+using Michsky.UI.Shift;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,14 +26,24 @@ public class UIManagerMBM : MonoBehaviour
     public bool ShowMoodPanel;
 
     public MoodTracking _MoodManager;
+    public static UIManagerMBM Instance;
 
+    public SpawnManager _SpawnManager;
+
+    public CursorDetection _CursorDetection;
+    public bool IsTeleported;
+    public ArtData _WelcomeRaka;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
     public void SetArtDetail(ArtData _Data)
     {
         _CurrentArt = _Data;
         SetArtPanel(_Data);
-        _InfoButton.SetActive(true);
-        _ChangeCamBttn.SetActive(true);
-
+        //_InfoButton.SetActive(true);
+        //_ChangeCamBttn.SetActive(true);
     }
     public void ArtExit()
     {
@@ -67,6 +78,7 @@ public class UIManagerMBM : MonoBehaviour
     {
         _InfoPanel.SetActive(false);
         _InfoButton.SetActive(true);
+
     }
     public void SetArtPanel(ArtData _Data)
     {
@@ -152,5 +164,13 @@ public class UIManagerMBM : MonoBehaviour
             _MoodManager.SetMoodPanel(2);
             ShowMoodPanel = false;
         }
+        if (IsTeleported)
+        {
+            SetArtDetail(_WelcomeRaka);
+            InfoTapped();
+            _SpawnManager.InfoTapped(false);
+            Debug.LogError("WelcomeRakaOpened");
+        }
+
     }
 }

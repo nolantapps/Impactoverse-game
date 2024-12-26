@@ -38,8 +38,8 @@ public class CrackTheCodePuzzle : MonoBehaviour
     public void Submited()
     {
         _GameMAnager.OpenDoor();
-        gameObject.SetActive(false);
         TokenSystem.Instance.UpdateToken(TotalTokens,TokenTypes.Competitor);
+        gameObject.SetActive(false);
     }
 
 

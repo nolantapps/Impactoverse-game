@@ -19,8 +19,41 @@ public class GameManagerMBM : MonoBehaviour
     public Camera _ArtCamera;
 
     public bool IsArtCam;
+    public static GameManagerMBM instance;
 
+    public ArtData _WelcomeRaka;
+
+    public bool CurrentCursorState
+    {
+        get
+        {
+            return CursorState;
+        }
+    }
+    private void Awake()
+    {
+        instance = this;
+    }
     float ArtCamFOV;
+    bool CursorState;
+    public void Start()
+    {
+        //Cursor.lockState = CursorLockMode.Locked;
+        //CursorState = false;
+        _MoodTracking.SetMoodPanel(3);
+    }
+    public void ToggleCursorState()
+    {
+        //Debug.Log("CursorCalled");
+        //CursorState = !CursorState;
+        //Cursor.visible = CursorState;
+        //if (CursorState)
+        //{
+        //    Cursor.lockState = CursorLockMode.None;
+        //    return;
+        //}
+        //Cursor.lockState = CursorLockMode.Locked;
+    }
 
     private void Update()
     {
@@ -32,8 +65,23 @@ public class GameManagerMBM : MonoBehaviour
             }
 
         }
-    }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
 
+            ToggleCursorState();
+        }
+    }
+    public void ToggleCameraOn_Off(bool state)
+    {
+        //CursorState = state;
+        //Cursor.visible = CursorState;
+        //if (CursorState)
+        //{
+        //    Cursor.lockState = CursorLockMode.None;
+        //    return;
+        //}
+        //Cursor.lockState = CursorLockMode.Locked;
+    }
     public void ShiftCam(bool State)
     {
         _ArtCamera.orthographicSize = _UIManager._CurrentArt._CamSize;
@@ -80,7 +128,10 @@ public class GameManagerMBM : MonoBehaviour
     void TeleportPlayer()
     {
         _SpawnManager.TeleportPlayerToGinko();
+        //_UIManager.SetArtDetail(_WelcomeRaka);
+        _UIManager.IsTeleported = true;
         _MoodTracking.SetMoodPanel(0);
+        _SpawnManager.InfoTapped(true);
     }
 
     public void BMHUDStatus(bool state)

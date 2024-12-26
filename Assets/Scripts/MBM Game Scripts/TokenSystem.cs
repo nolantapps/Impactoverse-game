@@ -13,7 +13,6 @@ public class TokenSystem : MonoBehaviour
 
     public Text CompetitorTokensText, _CreatorTokensText, NatureLoverTokensText, PhilanthropistTokensText;
 
-    public SpawnManager _SpawnManager;
 
 
     private void Awake()
@@ -23,11 +22,15 @@ public class TokenSystem : MonoBehaviour
 
     public void UpdateToken(float Tokens, TokenTypes _TokenType)
     {
+        Debug.Log("Instance Is Available");
         switch (_TokenType)
         {
+
             case TokenTypes.Competitor:
+                Debug.Log("CompetitorToken");
                 CompetitorTokens += Tokens;
                 CompetitorTokensText.text = CompetitorTokens.ToString();
+                Debug.Log("CompetitorToken Complete");
                 break;
             case TokenTypes.Creator:
                 _CreatorTokens += Tokens;
@@ -42,17 +45,29 @@ public class TokenSystem : MonoBehaviour
                 PhilanthropistTokensText.text = PhilanthropistTokens.ToString();
                 break;
         }
-        _SpawnManager.CheckPlayerData()._TokenUpdateParticle.SetActive(true);
-        _SpawnManager._UIManager._CurrentArt = null;
-        _SpawnManager._UIManager.CompletePanel.SetActive(true);
-        _SpawnManager._UIManager.GamePlayBttns(false);
-        _SpawnManager._UIManager._TokenGainedText.text = (_TokenType).ToString() + " " + Tokens.ToString();
-        Invoke(nameof(disableParticle), 2f);
+        Debug.Log("Outside Switch Statement");
+        if (SpawnManager.instance == null)
+        {
+            Debug.Log("SpawnManagerIsNUll");
+        }
+        if (UIManagerMBM.Instance== null)
+        {
+            Debug.Log("UIManagerIsNull");
+        }
 
+        SpawnManager.instance.CheckPlayerData()._TokenUpdateParticle.SetActive(true);
+       
+       UIManagerMBM.Instance._CurrentArt = null;
+        UIManagerMBM.Instance.CompletePanel.SetActive(true);
+        UIManagerMBM.Instance.GamePlayBttns(false);
+        UIManagerMBM.Instance._TokenGainedText.text = (_TokenType).ToString() + " " + Tokens.ToString();
+        Debug.Log("SpawnManagerIsAvalaible");
+        Invoke(nameof(disableParticle), 2f);
+        SoundSystemMBM.Instance.PlayTokenGained();
     }
 
     void disableParticle()
     {
-        _SpawnManager.CheckPlayerData()._TokenUpdateParticle.SetActive(false);
+        SpawnManager.instance.CheckPlayerData()._TokenUpdateParticle.SetActive(false);
     }
 }

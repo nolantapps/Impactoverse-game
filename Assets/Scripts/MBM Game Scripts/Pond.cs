@@ -10,11 +10,19 @@ public class Pond : MonoBehaviour
 
     public Outline _Outline;
 
+    public bool IsPondInteracted;
+
     private void OnMouseDown()
     {
-        _Outline.enabled = false;
-        _PondPanel.SetActive(true);
-        _FirstPAnel.SetActive(true);
-        _SecondPanel.SetActive(false);
+        if (!IsPondInteracted)
+        {
+            SoundSystemMBM.Instance.PlayBttnTapped();
+            _Outline.enabled = false;
+            _PondPanel.SetActive(true);
+            _FirstPAnel.SetActive(true);
+            _SecondPanel.SetActive(false);
+            IsPondInteracted = !IsPondInteracted;
+        }
+
     }
 }

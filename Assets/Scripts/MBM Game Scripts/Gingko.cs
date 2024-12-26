@@ -66,11 +66,13 @@ public class Gingko : MonoBehaviour
         IsPointerDown = true;
         IsPointerUp = false;
         _SpawnManager.PlayGingkoAnim();
+        SoundSystemMBM.Instance.PlayPowerGainGingko();
     }
     public void PointerUp()
     {
         IsPointerDown = false;
         IsPointerUp = true;
+        SoundSystemMBM.Instance.StopMusicEffects();
         _SpawnManager.PlayLoco();
     }
 
@@ -99,7 +101,8 @@ public class Gingko : MonoBehaviour
     {
         if (!IsLearnedGingko)
         {
-            //_GinkoPanel.SetActive(true);
+            _GinkoPanel.SetActive(true);
+            SoundSystemMBM.Instance.PlayBttnTapped();
             _BoxColliderTrigger.enabled = false;
             _outline.enabled = false;
             _BoxCollderPower.enabled = true;
@@ -110,6 +113,6 @@ public class Gingko : MonoBehaviour
     public void PowerGainComplete()
     {
         TokenSystem.Instance.UpdateToken(5, TokenTypes.Nature_Lover);
-        _SpawnManager._UIManager.ShowMoodPanel = true;
+        //_SpawnManager._UIManager.ShowMoodPanel = true;
     }
 }
