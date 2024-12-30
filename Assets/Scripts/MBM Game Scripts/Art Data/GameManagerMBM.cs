@@ -88,7 +88,7 @@ public class GameManagerMBM : MonoBehaviour
         Transform _pos = _UIManager._CurrentArt._CamPos;
         _ArtCam.transform.SetPositionAndRotation(_pos.position, _pos.rotation);
         _UIManager._InfoButton.SetActive(!State);
-        _UIManager._ChangeCamBttn.SetActive(!State);
+        //_UIManager._ChangeCamBttn.SetActive(!State);
         _UIManager._ZoomInOut.SetActive(State);
         _UIManager._RakaHelp.SetActive(!State);
         _ArtCam.SetActive(State);

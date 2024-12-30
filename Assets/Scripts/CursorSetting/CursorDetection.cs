@@ -38,7 +38,8 @@ public class CursorDetection : MonoBehaviour
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity, ~layerToIgnore))
         {
             // Log the tag of the 3D object hit by the ray
-            Debug.Log("3D Object at Camera Center: " + hit.collider.gameObject.name + " with Tag: " + hit.collider.gameObject.tag);
+
+            //Debug.Log("3D Object at Camera Center: " + hit.collider.gameObject.name + " with Tag: " + hit.collider.gameObject.tag);
 
             if (hit.collider.gameObject.GetComponent<ArtData>() != null && !IsPanelEnabled)
             {
@@ -50,6 +51,11 @@ public class CursorDetection : MonoBehaviour
             {
                 _UIPanelArt = hit.collider.gameObject.GetComponent<UIPanelArt>();
                 _UIManager._InfoButton.SetActive(true);
+
+                if (hit.collider.gameObject.GetComponent<Gingko>())
+                {
+                    hit.collider.gameObject.GetComponent<Gingko>().IsLearnedGingko = true;
+                }
                 //_UIManager._ChangeCamBttn.SetActive(true);
             }
             else
@@ -59,6 +65,8 @@ public class CursorDetection : MonoBehaviour
                 //_UIManager._ChangeCamBttn.SetActive(false);
                 _UIManager._InfoButton.SetActive(false);
             }
+
+
         }
 
         if (Input.GetKeyDown(KeyCode.F))

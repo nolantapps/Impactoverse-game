@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: 3 Theme Panel 3
+  m_EditorClassIdentifier: 
+  _ArtType: 0
+  _ArtName: Teenage Girls
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 0}
+    _ArtDetail:
+    - The depiction of teenage girls in the late 19th century reflects a transition
+      from childhood to young adulthood, with themes of innocence, vitality, and
+      the blossoming of personal identity. Artists of this era often portrayed young
+      girls as symbols of beauty and purity, framed within lush natural settings
+      that emphasised their connection to the environment. In works by artists like
+      Berthe Morisot and her French contemporaries, the delicate age of adolescence
+      is captured with tender brushstrokes and an appreciation for the emotions that
+      come with it
+    - "In contrast, Scottish artists such as William Yule and Edward Hornel portrayed
+      teenage girls in more symbolic roles. Yule\u2019s \u201CSpring\u201D and MacGeorge\u2019s
+      \u201CEcho\u201D celebrate the energy of youth, with girls emerging as figures
+      of natural beauty, untamed by the constraints of adulthood. These works capture
+      the purity of adolescence against the backdrop of nature\u2019s cycles, offering
+      a snapshot of an era when the innocence of youth was revered in art and society.
+      \u201CEcho\u201D scene in particular is shaped in the style and spirit of Renoir\u2019s
+      landscapes and portraits of the 1880s."
+    - The role of teenage girls in these paintings reflects a broader cultural shift
+      towards recognising childhood as a distinct, cherished phase of life. It marks
+      a period where the image of the young girl, full of potential and promise,
+      became a central motif in art, celebrating both her inner world, further revealed
+      in her diaries like Julie's, and her external beauty.

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: 3 Theme Panel 2
+  m_EditorClassIdentifier: 
+  _ArtType: 0
+  _ArtName: Outdoor Pleasures
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 0}
+    _ArtDetail:
+    - 'Leisure - particularly in natural settings - became increasingly important
+      in 19th-century life. Leisure, particularly in natural settings, became increasingly
+      important in 19th-century life. Nature became a refuge where children could
+      play freely, away from the constraints of urban life. This shift in values
+      is reflected in the paintings, where the natural world is not just a backdrop
+      but a central element in the emotional and physical development of children. '
+    - "In her letters, Berthe Morisot often mentioned her daughter Julie's playful
+      nature (1882): \u201CWe took a walk with Bibi in the country, in a very pretty
+      place, in a direction we have never taken together. The ground was cut by little
+      streams; we had to ask the washerwomen to help us step over one of the obstacles,
+      and your daughter, who is not brave, has developed such a fear that she begs
+      me not to go there again. Her happy little pink face is a pleasure to look
+      at and consoles me for your absence.\u201D"
+    - "Julie, depicted in numerous works, was often shown in moments of contemplation
+      or play, highlighting the universal experience of youth. Morisot\u2019s daughter
+      also became the focus of her artistic experiments. As Anne Higonnet notes in
+      her biography of the artist: \"Through Monet, Morisot had asked Rodin if he
+      could give her a sculpture lesson. It seemed that paintings, drawings, and
+      prints of Julie were not enough to satisfy her maternal passion: she now wanted
+      a bust of her daughter. And so, one day, Rodin came to offer his guidance at
+      Rue de Villejust.\" "

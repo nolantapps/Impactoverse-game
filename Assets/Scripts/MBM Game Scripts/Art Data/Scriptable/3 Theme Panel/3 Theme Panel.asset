@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: 3 Theme Panel
+  m_EditorClassIdentifier: 
+  _ArtType: 0
+  _ArtName: Alexandre Roche, the Bridge
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 0}
+    _ArtDetail:
+    - Born in Glasgow to a French father and Scottish mother, Roche (1861-1921) studied
+      at Glasgow School of Art before moving to the Atelier Julian in Paris. Befriending
+      John Lavery and William Kennedy, he joined them at Grez-sur-Loing. Roche, who
+      was bi-lingual, had greater access to the wider artistic scene in France than
+      his Scottish contemporaries due to their lack of French. This is reflected
+      in his striking embracing of impressionist techniques.
+    - 'The significance of Early Autumn, Grez (1883) with a glimpse of the bridge
+      in the distance lies in its spontaneity and freedom of brushwork that owes
+      more to the Impressionists such as Monet and Pissarro than to the precision
+      of Bastien-Lepage. The works of both Scottish and French artists depict these
+      moments of outdoor relaxation and resonate deeply today, reminding us of the
+      timeless importance of nature in nurturing both body and mind, and the central
+      role of children in shaping the future. '

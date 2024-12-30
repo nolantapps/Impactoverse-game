@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe72f8848c25184a8c8d6019bd50fd5, type: 3}
+  m_Name: 3 Theme Panel 1
+  m_EditorClassIdentifier: 
+  _ArtType: 0
+  _ArtName: Nature and Childhood
+  _ArtDetail:
+  - _Agegroup: 0
+    _Images: {fileID: 0}
+    _ArtDetail:
+    - 'Themes of nature and childhood are at the heart of this exhibition. By the
+      late 19th century, childhood began to be recognised as a stage of life deserving
+      of attention and care. Artists drew inspiration from this shift, depicting
+      children in natural settings. Loose brushstrokes, the vibrancy and lushness
+      of their natural surroundings, and the plein air technique evoke the joy and
+      spontaneity of childhood, reflecting the growing appreciation of nature as
+      a space for education and leisure.  '
+    - "Morisot\u2019s deep connection with her daughter Julie, most often portrayed
+      in a natural setting, echoes the Scottish artists\u2019 depictions of children,
+      where the simplicity of life is expressed with sensitivity and tenderness."
+    - "\"My very dear Berthe,\" wrote Duchess Ad\xE8le Colonna, close friend of Morisot
+      and artist who used the pseudonym \"Marcello,\" \"I hope you are working and
+      producing those paintings so true in their effects that they seem to be a window
+      open onto nature.\""

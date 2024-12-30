@@ -50,7 +50,7 @@ public class UIManagerMBM : MonoBehaviour
         _CurrentArt = null;
         _InfoButton.SetActive(false);
         _InfoPanel.SetActive(false);
-        _ChangeCamBttn.SetActive(false);
+        //_ChangeCamBttn.SetActive(false);
     }
 
     public void InfoTapped()
@@ -156,7 +156,7 @@ public class UIManagerMBM : MonoBehaviour
         if (_CurrentArt != null)
         {
             _InfoButton.SetActive(state);
-            _ChangeCamBttn.SetActive(state);
+            //_ChangeCamBttn.SetActive(state);
         }
         TokenPanel.SetActive(state);
         if (ShowMoodPanel)
