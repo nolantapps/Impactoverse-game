@@ -1,3 +1,4 @@
+using GameAnalyticsSDK;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -26,7 +27,7 @@ public class MoodTracking : MonoBehaviour
     }
     public void MoodTapped(MoodBttn _Bttn)
     {
-        Debug.Log(_Bttn.row + " , " + _Bttn.column);
+        GameAnalytics.NewDesignEvent("User Mood Is : "+_Bttn.Mood);
         _MoodPanel.SetActive(false);
         TokenSystem.Instance.UpdateToken(TokenAmount, TokenTypes.Philanthropist);
 

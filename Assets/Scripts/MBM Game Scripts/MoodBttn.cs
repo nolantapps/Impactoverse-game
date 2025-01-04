@@ -6,4 +6,5 @@ public class MoodBttn : MonoBehaviour
 {
     public int row;
     public int column;
+    public string Mood;
 }

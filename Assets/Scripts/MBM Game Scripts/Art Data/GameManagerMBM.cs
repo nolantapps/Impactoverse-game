@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UIElements;
+using TMPro;
 public class GameManagerMBM : MonoBehaviour
 {
     public BoxCollider _DoorTrigger, ExhbDoorTrigger;
@@ -20,7 +21,7 @@ public class GameManagerMBM : MonoBehaviour
 
     public bool IsArtCam;
     public static GameManagerMBM instance;
-
+    public TMP_Dropdown _Menu;
     public ArtData _WelcomeRaka;
 
     public bool CurrentCursorState
@@ -124,6 +125,11 @@ public class GameManagerMBM : MonoBehaviour
         _GinkoHud.SetActive(true);
         _ExhbHud.SetActive(true);
         _Walls.SetActive(false);
+    }
+    public void SendCountryAnalytics()
+    {
+       
+        GameAnalyticsSDK.GameAnalytics.NewDesignEvent("User Country is : "+_Menu.options[_Menu.value].text );
     }
     void TeleportPlayer()
     {

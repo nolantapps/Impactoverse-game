@@ -170,6 +170,7 @@ public class UIManagerMBM : MonoBehaviour
             InfoTapped();
             _SpawnManager.InfoTapped(false);
             Debug.LogError("WelcomeRakaOpened");
+            IsTeleported = false;
         }
 
     }

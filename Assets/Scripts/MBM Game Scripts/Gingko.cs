@@ -84,7 +84,7 @@ public class Gingko : MonoBehaviour
         if (_timer >= _TotalTime)
         {
             _TapBttn.SetActive(false);
-            _BoxCollderPower.enabled = false;
+            //_BoxColliderTrigger.enabled = false;
             PointerUp();
             OnPointerUp();
             PowerGainComplete();

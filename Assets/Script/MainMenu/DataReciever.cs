@@ -22,6 +22,8 @@ public class DataReceiver : MonoBehaviour
 
     public void ReceiveData(string jsonData )
     {
+        GameAnalyticsSDK.GameAnalytics.Initialize();
+
         string[] strings = jsonData.Split('|');
         string user ="";
         string isChild ="";
@@ -115,7 +117,6 @@ public class DataReceiver : MonoBehaviour
         {
             Debug.LogError($"Error deserializing JSON: {ex.Message}");
         }
-        GameAnalyticsSDK.GameAnalytics.Initialize();
 
     }
 
